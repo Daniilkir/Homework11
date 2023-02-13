@@ -17,35 +17,36 @@ ul {
     list-style: none;
 }
 .box {
+    height: 1000px;
+    width: 400px;
     position: relative; 
 }
 
 .box:hover .list {
-    transform: translateX(-100%);
+    transform: translateX(-13%);
 }
 .box:hover .menu-text {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
 }
 .menu-text{
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 50px;
-    margin-top: 350px;
-    margin-bottom: 20px;
-    width: 170px;
-    height: 70px;
+    width: 50px;
+    height: 1000px;
     background-color: red;
 }
 
 .list{
     position: absolute;
-    top: 111px;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 111px;
     margin: auto;
-    width: 40%;
-    height: 1000px;
+    width: 80%;
+    height: 1005px;
     background-color: aqua;
 
     display: flex;
