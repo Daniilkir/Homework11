@@ -1,147 +1,61 @@
-.page-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
+.hero {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
 
-@media screen and (min-width: 768px) {
-  .page-header {
-      display: flex;
-      height: 80px;
-      align-items: center;
-      padding: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-  .header-contact {
-    display: flex;
-    flex-direction: row;
-}
-}
-
-.web {
-  color: rgb(30, 173, 255); ;
-}
-
-.logo {
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  margin-right: 25px;
-  color: $text-color;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .web {
-      color: $text-color;
-  }
-}
-.menu {
+  
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 118px, 0px;
 
-&-open {
+
+&-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $white-color;
+  margin-bottom: 30px;
+
+} 
+
+&-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $hover-color;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
-  background-color: transparent;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
-&-open:hover {
-  fill: $secondary-color;
- } 
-&-nav {
-  display: none;
-}
+&-button:hover {
+  background-color: $secondary-color;
+} 
 }
 
-@media screen and (min-width: 768px) {
-  .menu-open {
-      display: none;
+@media screen and (min-width:768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background768.jpg);
   }
 }
 
-.header-contact {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .menu {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 35px;
-      margin-bottom: 32px;
-  }
-  
-  .menu-nav {
-      display: flex;
-      /* margin-left: 93px; */
-      align-items: center;
-  }
-  
-  .menu-nav .link:hover,
-  .header-contact .link:hover {
-      color: $hover-color;
-  }
-  
-  .nav-item {
-      margin-right: 57px;
-  }
-  
-  .menu-nav-link {
-      color: $text-color;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-  }
-
-  .menu-nav-link:hover {
-      color: $hover-color;
-  }
-  .header-contact {
-      display: flex;
-      flex-direction: row;
-  }
-    .email_header {
-      padding-right: 30px;
-    }
-    
-   .header-contact {
-      display: flex;
-      flex-direction: column;
-  } 
-  
-  .header-icon {
-      fill: $primary-color;
-  }
-  
-  .header-contact-list {
-      color: $primary-color;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-  }
-  
-  .header-contact-list:hover {
-      color: $hover-color;
-  }
-  
-  .header-contact-list:hover .header-icon {
-      fill: $secondary-color;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-contact {
-      display: flex;
+@media screen and (min-width:1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background1200.jpg);
   }
 }

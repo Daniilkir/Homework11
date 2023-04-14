@@ -61,6 +61,7 @@
 }
 }
 
+
 @media screen and (min-width: 768px) {
     .menu-open {
         display: none;
@@ -70,6 +71,7 @@
   .header-contact {
     display: none;
 }
+
 
 @media screen and (min-width: 768px) {
     .menu {
@@ -108,16 +110,12 @@
     }
     .header-contact {
         display: flex;
-        flex-direction: row;
+            flex-direction: column;
     }
+
       .email_header {
         padding-right: 30px;
       }
-      
-     .header-contact {
-        display: flex;
-        flex-direction: column;
-    } 
     
     .header-icon {
         fill: $primary-color;
@@ -143,5 +141,6 @@
 @media screen and (min-width: 1200px) {
     .header-contact {
         display: flex;
+        flex-direction: row;
     }
 }
